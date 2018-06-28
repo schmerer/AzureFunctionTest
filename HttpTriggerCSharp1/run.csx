@@ -18,5 +18,5 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
 
     return name == null
         ? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
-        : req.CreateResponse(HttpStatusCode.OK, "Hello " + name + ". You are the best. You made this thing deploy.");
+        : req.CreateResponse(HttpStatusCode.OK, "Hello " + name + ". You are the best. You made this thing deploy. And it is super fast");
 }
